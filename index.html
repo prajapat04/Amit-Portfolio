@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amit Prajapat | Web Developer</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#0ea5e9',secondary:'#7c3aed'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="custom-cursor"></div>
+<div class="custom-cursor-follower"></div>
+<!-- Navigation -->
+<nav class="fixed w-full z-50 bg-[#0f172a]/80 backdrop-blur-lg border-b border-white/10">
+<div class="container mx-auto px-6 py-4 flex justify-between items-center">
+<a href="#" class="text-2xl font-['Pacifico'] text-white">Amit</a>
+<div class="hidden md:flex space-x-8">
+<a href="#home" class="nav-link text-gray-300 hover:text-white transition-colors">Home</a>
+<a href="#about" class="nav-link text-gray-300 hover:text-white transition-colors">About</a>
+<a href="#skills" class="nav-link text-gray-300 hover:text-white transition-colors">Skills</a>
+<a href="#projects" class="nav-link text-gray-300 hover:text-white transition-colors">Projects</a>
+<a href="#experience" class="nav-link text-gray-300 hover:text-white transition-colors">Experience</a>
+<a href="#contact" class="nav-link text-gray-300 hover:text-white transition-colors">Contact</a>
+</div>
+<button class="md:hidden w-10 h-10 flex items-center justify-center text-white" id="mobile-menu-button">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+<!-- Mobile Menu -->
+<div class="md:hidden hidden bg-[#0f172a]/95 backdrop-blur-lg absolute w-full border-b border-white/10" id="mobile-menu">
+<div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+<a href="#home" class="text-gray-300 hover:text-white transition-colors py-2">Home</a>
+<a href="#about" class="text-gray-300 hover:text-white transition-colors py-2">About</a>
+<a href="#skills" class="text-gray-300 hover:text-white transition-colors py-2">Skills</a>
+<a href="#projects" class="text-gray-300 hover:text-white transition-colors py-2">Projects</a>
+<a href="#experience" class="text-gray-300 hover:text-white transition-colors py-2">Experience</a>
+<a href="#contact" class="text-gray-300 hover:text-white transition-colors py-2">Contact</a>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+<div class="hero-particles">
+<!-- Particles will be added by JS -->
+</div>
+<div class="container mx-auto px-6 py-24 relative z-10">
+<div class="flex flex-col items-center text-center max-w-4xl mx-auto fade-in">
+<p class="text-primary mb-4 tracking-widest uppercase">Web Developer & UI/UX Designer</p>
+<h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6" style="padding: 10px;">
+<span class="gradient-text glow">Amit Prajapat</span>
+</h1>
+<p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl">
+I create stunning digital experiences with clean code and innovative design
+</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="#projects" class="bg-primary hover:bg-primary/90 text-white px-8 py-3 !rounded-button font-medium transition-all whitespace-nowrap">
+View My Work
+</a>
+<a href="#contact" class="bg-transparent border border-primary text-primary hover:bg-primary/10 px-8 py-3 !rounded-button font-medium transition-all whitespace-nowrap">
+Contact Me
+</a>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 scroll-indicator">
+<div class="w-8 h-12 border-2 border-white/30 rounded-full flex justify-center">
+<div class="w-2 h-2 bg-primary rounded-full mt-2 animate-bounce"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section id="about" class="py-24 relative overflow-hidden">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16 fade-in">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">About <span class="gradient-text">Me</span></h2>
+<div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="fade-in">
+<div class="relative">
+<div class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-primary"></div>
+<div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-primary"></div>
+<img src="profile.jpg" alt="Amit Prajapat" class="w-full h-auto rounded-lg shadow-2xl object-cover object-top">
+</div>
+</div>
+<div class="fade-in">
+<h3 class="text-2xl font-bold mb-4">Who am I?</h3>
+<p class="text-gray-300 mb-6">
+Creative and detail-oriented Frontend Web Developer with hands-on experience in building responsive and user-friendly web interfaces. Proficient in HTML, CSS, JavaScript, React.js, and Git. Passionate about clean code, modern UI/UX design, and delivering high-quality web solutions. Seeking opportunities to grow in a collaborative team environment.
+</p>
+<p class="text-gray-300 mb-8">
+My approach combines technical expertise with creative problem-solving. I believe that great design should not only look beautiful but also solve real problems and create meaningful connections with users.
+</p>
+<div class="space-y-4 mb-8">
+<div>
+<div class="flex justify-between mb-1">
+<span class="font-medium">Frontend Development</span>
+<span>95%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill" data-width="95%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="font-medium">UI/UX Design</span>
+<span>90%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill" data-width="90%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="font-medium">Backend Development</span>
+<span>85%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill" data-width="85%"></div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-4">
+<a onclick="donwloadCV()" class="bg-transparent border border-white/20 hover:border-primary text-white px-6 py-2 !rounded-button font-medium transition-all flex items-center gap-2 whitespace-nowrap">
+<i class="ri-download-line"></i> Download CV
+</a>
+<a href="#contact" class="bg-transparent border border-white/20 hover:border-primary text-white px-6 py-2 !rounded-button font-medium transition-all flex items-center gap-2 whitespace-nowrap">
+<i class="ri-mail-line"></i> Get in Touch
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section id="skills" class="py-24 bg-[#0a0f1a]">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16 fade-in">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">My <span class="gradient-text">Skills</span></h2>
+<div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+<p class="text-gray-300 mt-6 max-w-2xl mx-auto">
+I've worked with a variety of technologies and frameworks to create exceptional digital experiences
+</p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+<div class="skill-card rounded-lg p-6 text-center fade-in">
+<div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-primary/10 rounded-full">
+<i class="ri-html5-fill ri-2x text-primary"></i>
+</div>
+<h3 class="text-lg font-semibold mb-2">HTML5</h3>
+<div class="progress-bar">
+<div class="progress-fill" data-width="98%"></div>
+</div>
+</div>
+<div class="skill-card rounded-lg p-6 text-center fade-in">
+<div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-primary/10 rounded-full">
+<i class="ri-css3-fill ri-2x text-primary"></i>
+</div>
+<h3 class="text-lg font-semibold mb-2">CSS3</h3>
+<div class="progress-bar">
+<div class="progress-fill" data-width="95%"></div>
+</div>
+</div>
+<div class="skill-card rounded-lg p-6 text-center fade-in">
+<div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-primary/10 rounded-full">
+<i class="ri-javascript-fill ri-2x text-primary"></i>
+</div>
+<h3 class="text-lg font-semibold mb-2">JavaScript</h3>
+<div class="progress-bar">
+<div class="progress-fill" data-width="92%"></div>
+</div>
+</div>
+<div class="skill-card rounded-lg p-6 text-center fade-in">
+<div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-primary/10 rounded-full">
+<i class="ri-reactjs-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-lg font-semibold mb-2">React</h3>
+<div class="progress-bar">
+<div class="progress-fill" data-width="90%"></div>
+</div>
+</div>
+<!-- <div class="skill-card rounded-lg p-6 text-center fade-in">
+<div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-primary/10 rounded-full">
+<i class="ri-vuejs-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-lg font-semibold mb-2">Vue.js</h3>
+<div class="progress-bar">
+<div class="progress-fill" data-width="85%"></div>
+</div>
+</div> -->
+<!-- <div class="skill-card rounded-lg p-6 text-center fade-in">
+<div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-primary/10 rounded-full">
+<i class="ri-nodejs-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-lg font-semibold mb-2">Node.js</h3>
+<div class="progress-bar">
+<div class="progress-fill" data-width="88%"></div>
+</div>
+</div> -->
+<div class="skill-card rounded-lg p-6 text-center fade-in">
+<div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-primary/10 rounded-full">
+<i class="ri-database-2-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-lg font-semibold mb-2">MongoDB</h3>
+<div class="progress-bar">
+<div class="progress-fill" data-width="82%"></div>
+</div>
+</div>
+<div class="skill-card rounded-lg p-6 text-center fade-in">
+<div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-primary/10 rounded-full">
+<i class="ri-github-fill ri-2x text-primary"></i>
+</div>
+<h3 class="text-lg font-semibold mb-2">Git/GitHub</h3>
+<div class="progress-bar">
+<div class="progress-fill" data-width="90%"></div>
+</div>
+</div>
+<!-- <div class="skill-card rounded-lg p-6 text-center fade-in">
+<div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-primary/10 rounded-full">
+<i class="ri-flutter-fill ri-2x text-primary"></i>
+</div>
+<h3 class="text-lg font-semibold mb-2">Flutter</h3>
+<div class="progress-bar">
+<div class="progress-fill" data-width="75%"></div>
+</div>
+</div> -->
+<!-- <div class="skill-card rounded-lg p-6 text-center fade-in">
+<div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-primary/10 rounded-full">
+<i class="ri-terminal-box-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-lg font-semibold mb-2">TypeScript</h3>
+<div class="progress-bar">
+<div class="progress-fill" data-width="85%"></div>
+</div>
+</div> -->
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section id="projects" class="py-24">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16 fade-in">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">My <span class="gradient-text">Projects</span></h2>
+<div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+<p class="text-gray-300 mt-6 max-w-2xl mx-auto">
+Here are some of my recent projects that showcase my skills and expertise
+</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="card rounded-lg overflow-hidden fade-in">
+<div class="relative overflow-hidden group">
+<img src="react-notes.png" alt="Notes app" class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+<div class="p-6">
+<div class="flex gap-2 mb-3">
+<span class="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">React</span>
+<span class="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">TypeScript</span>
+</div>
+<div class="flex gap-3">
+<a href="https://github.com/prajapat04" class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-primary/20 rounded-full transition-colors">
+<i class="ri-github-fill text-white"></i>
+</a>
+<a href="https://fascinating-quokka-d2be88.netlify.app/" class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-primary/20 rounded-full transition-colors">
+<i class="ri-external-link-line text-white"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">React Notes App</h3>
+<p class="text-gray-400 mb-4">
+A full-featured Notes app with advanced filtering, pining and modification.
+</p>
+</div>
+</div>
+<div class="card rounded-lg overflow-hidden fade-in">
+<div class="relative overflow-hidden group">
+<img src="https://readdy.ai/api/search-image?query=modern%20dashboard%20UI%20with%20dark%20theme%2C%20data%20visualization%20charts%20and%20graphs%2C%20analytics%20interface%2C%20professional%20screenshot%20of%20admin%20panel%20with%20statistics%20and%20metrics&width=600&height=400&seq=3&orientation=landscape" alt="Dashboard Application" class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+<div class="p-6">
+<div class="flex gap-2 mb-3">
+<span class="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">Vue.js</span>
+<span class="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">Express</span>
+<span class="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">D3.js</span>
+</div>
+<div class="flex gap-3">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-primary/20 rounded-full transition-colors">
+<i class="ri-github-fill text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-primary/20 rounded-full transition-colors">
+<i class="ri-external-link-line text-white"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Insight Analytics Dashboard</h3>
+<p class="text-gray-400 mb-4">
+An interactive analytics dashboard with real-time data visualization and customizable widgets.
+</p>
+</div>
+</div>
+<div class="card rounded-lg overflow-hidden fade-in">
+<div class="relative overflow-hidden group">
+<img src="https://readdy.ai/api/search-image?query=mobile%20app%20interface%20for%20fitness%20tracking%2C%20dark%20theme%20UI%20with%20workout%20tracking%20screens%2C%20health%20metrics%2C%20and%20activity%20charts%2C%20professional%20screenshot%20on%20smartphone&width=600&height=400&seq=4&orientation=landscape" alt="Fitness App" class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+<div class="p-6">
+<div class="flex gap-2 mb-3">
+<span class="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">React Native</span>
+<span class="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">Firebase</span>
+<span class="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">Redux</span>
+</div>
+<div class="flex gap-3">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-primary/20 rounded-full transition-colors">
+<i class="ri-github-fill text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-primary/20 rounded-full transition-colors">
+<i class="ri-external-link-line text-white"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">FitTrack Mobile App</h3>
+<p class="text-gray-400 mb-4">
+A fitness tracking mobile application with workout plans, progress tracking, and social features.
+</p>
+</div>
+</div>
+<div class="card rounded-lg overflow-hidden fade-in">
+<div class="relative overflow-hidden group">
+<img src="https://readdy.ai/api/search-image?query=modern%20SaaS%20landing%20page%20with%20dark%20theme%2C%20professional%20website%20design%20for%20project%20management%20tool%2C%20feature%20showcase%20with%20clean%20UI%20elements%2C%20high-quality%20screenshot&width=600&height=400&seq=5&orientation=landscape" alt="SaaS Platform" class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+<div class="p-6">
+<div class="flex gap-2 mb-3">
+<span class="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">Next.js</span>
+<span class="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">Tailwind</span>
+<span class="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">Prisma</span>
+</div>
+<div class="flex gap-3">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-primary/20 rounded-full transition-colors">
+<i class="ri-github-fill text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-primary/20 rounded-full transition-colors">
+<i class="ri-external-link-line text-white"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">TaskFlow SaaS Platform</h3>
+<p class="text-gray-400 mb-4">
+A project management SaaS platform with team collaboration features, task tracking, and analytics.
+</p>
+</div>
+</div>
+<div class="card rounded-lg overflow-hidden fade-in">
+<div class="relative overflow-hidden group">
+<img src="https://readdy.ai/api/search-image?query=AI%20chatbot%20interface%20with%20dark%20theme%2C%20conversational%20UI%20design%2C%20chat%20messages%2C%20response%20bubbles%2C%20and%20virtual%20assistant%20features%2C%20professional%20screenshot&width=600&height=400&seq=6&orientation=landscape" alt="AI Chatbot" class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+<div class="p-6">
+<div class="flex gap-2 mb-3">
+<span class="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">Python</span>
+<span class="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">TensorFlow</span>
+<span class="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">Flask</span>
+</div>
+<div class="flex gap-3">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-primary/20 rounded-full transition-colors">
+<i class="ri-github-fill text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-primary/20 rounded-full transition-colors">
+<i class="ri-external-link-line text-white"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Nova AI Assistant</h3>
+<p class="text-gray-400 mb-4">
+An AI-powered chatbot with natural language processing capabilities for customer support.
+</p>
+</div>
+</div>
+<div class="card rounded-lg overflow-hidden fade-in">
+<div class="relative overflow-hidden group">
+<img src="https://readdy.ai/api/search-image?query=cryptocurrency%20trading%20platform%20interface%20with%20dark%20theme%2C%20price%20charts%2C%20trading%20pairs%2C%20order%20book%2C%20and%20market%20data%2C%20professional%20screenshot&width=600&height=400&seq=7&orientation=landscape" alt="Crypto Platform" class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+<div class="p-6">
+<div class="flex gap-2 mb-3">
+<span class="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">Angular</span>
+<span class="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">Node.js</span>
+<span class="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">WebSockets</span>
+</div>
+<div class="flex gap-3">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-primary/20 rounded-full transition-colors">
+<i class="ri-github-fill text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-primary/20 rounded-full transition-colors">
+<i class="ri-external-link-line text-white"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">CryptoVision Trading Platform</h3>
+<p class="text-gray-400 mb-4">
+A cryptocurrency trading platform with real-time price updates, portfolio management, and market analysis.
+</p>
+</div>
+</div>
+</div>
+<div class="text-center mt-12 fade-in">
+<a href="allProjects.html" data-readdy="true" class="inline-flex items-center gap-2 bg-transparent border border-primary text-primary hover:bg-primary/10 px-8 py-3 !rounded-button font-medium transition-all whitespace-nowrap">
+View All Projects <i class="ri-arrow-right-line"></i>
+</a>
+</div>
+</div>
+</section>
+<!-- Experience Section -->
+<section id="experience" class="py-24 bg-[#0a0f1a]">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16 fade-in">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Work <span class="gradient-text">Experience</span></h2>
+<div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+<p class="text-gray-300 mt-6 max-w-2xl mx-auto">
+My professional journey in the world of web development
+</p>
+</div>
+<div class="relative max-w-4xl mx-auto">
+<!-- Timeline Line -->
+<div class="absolute left-0 md:left-1/2 top-0 bottom-0 w-1 timeline-line md:transform md:-translate-x-1/2"></div>
+<!-- Experience Item 1 -->
+<div class="relative flex flex-col md:flex-row mb-16 fade-in">
+<div class="md:w-1/2 md:pr-12 md:text-right mb-8 md:mb-0">
+<div class="hidden md:block absolute top-0 right-0 md:right-auto md:left-1/2 w-5 h-5 rounded-full timeline-dot transform translate-x-[-50%]"></div>
+<span class="inline-block bg-primary/20 text-primary px-3 py-1 rounded-full text-sm mb-2">2023 - Present</span>
+<h3 class="text-xl font-bold mb-2">Frontend Developer</h3>
+<p class="text-primary mb-2">Self Made My self</p>
+<p class="text-gray-400">
+Starting Form the Base of code and Complete lots of Projects in HTML, CSS, JS, REACT, MongoDB.
+</p>
+</div>
+<div class="md:w-1/2 md:pl-12 md:block hidden"></div>
+</div>
+<!-- Experience Item 2 -->
+<!-- <div class="relative flex flex-col md:flex-row mb-16 fade-in">
+<div class="md:w-1/2 md:pr-12 md:text-right md:block hidden"></div>
+<div class="md:w-1/2 md:pl-12">
+<div class="hidden md:block absolute top-0 right-auto left-1/2 w-5 h-5 rounded-full timeline-dot transform translate-x-[-50%]"></div>
+<span class="inline-block bg-primary/20 text-primary px-3 py-1 rounded-full text-sm mb-2">2020 - 2023</span>
+<h3 class="text-xl font-bold mb-2">UI/UX Developer</h3>
+<p class="text-primary mb-2">Innovate Digital Agency</p>
+<p class="text-gray-400">
+Designed and developed user interfaces for various clients, focusing on responsive design and accessibility.
+</p>
+</div>
+</div> -->
+<!-- Experience Item 3 -->
+<!-- <div class="relative flex flex-col md:flex-row mb-16 fade-in">
+<div class="md:w-1/2 md:pr-12 md:text-right mb-8 md:mb-0">
+<div class="hidden md:block absolute top-0 right-0 md:right-auto md:left-1/2 w-5 h-5 rounded-full timeline-dot transform translate-x-[-50%]"></div>
+<span class="inline-block bg-primary/20 text-primary px-3 py-1 rounded-full text-sm mb-2">2018 - 2020</span>
+<h3 class="text-xl font-bold mb-2">Frontend Developer</h3>
+<p class="text-primary mb-2">WebSphere Inc.</p>
+<p class="text-gray-400">
+Developed responsive websites and web applications using Vue.js and Nuxt.js for various clients.
+</p>
+</div>
+<div class="md:w-1/2 md:pl-12 md:block hidden"></div>
+</div> -->
+<!-- Experience Item 4 -->
+<!-- <div class="relative flex flex-col md:flex-row fade-in">
+<div class="md:w-1/2 md:pr-12 md:text-right md:block hidden"></div>
+<div class="md:w-1/2 md:pl-12">
+<div class="hidden md:block absolute top-0 right-auto left-1/2 w-5 h-5 rounded-full timeline-dot transform translate-x-[-50%]"></div>
+<span class="inline-block bg-primary/20 text-primary px-3 py-1 rounded-full text-sm mb-2">2016 - 2018</span>
+<h3 class="text-xl font-bold mb-2">Junior Web Developer</h3>
+<p class="text-primary mb-2">Digital Creations Co.</p>
+<p class="text-gray-400">
+Started my career building websites with HTML, CSS, and JavaScript, and learning modern frameworks.
+</p>
+</div>
+</div> -->
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-24">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16 fade-in">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Get In <span class="gradient-text">Touch</span></h2>
+<div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+<p class="text-gray-300 mt-6 max-w-2xl mx-auto">
+Have a project in mind or want to collaborate? Feel free to reach out to me
+</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div class="fade-in">
+<div class="bg-[#0a0f1a] rounded-lg p-8 h-full">
+<h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full flex-shrink-0">
+<i class="ri-map-pin-line ri-lg text-primary"></i>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-1">Location</h4>
+<p class="text-gray-400">Rajsthan, india</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full flex-shrink-0">
+<i class="ri-mail-line ri-lg text-primary"></i>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-1">Email</h4>
+<p class="text-gray-400">prajapat.amit411@gmail.com</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full flex-shrink-0">
+<i class="ri-phone-line ri-lg text-primary"></i>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-1">Phone</h4>
+<p class="text-gray-400">8290726836</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full flex-shrink-0">
+<i class="ri-time-line ri-lg text-primary"></i>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-1">Working Hours</h4>
+<p class="text-gray-400">Monday - Friday: 9:00 AM - 6:00 PM</p>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<h4 class="text-lg font-semibold mb-4">Follow Me</h4>
+<div class="flex gap-4">
+<a href="https://github.com/prajapat04" class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-primary/20 rounded-full transition-colors">
+<i class="ri-github-fill text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-primary/20 rounded-full transition-colors">
+<i class="ri-linkedin-fill text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-primary/20 rounded-full transition-colors">
+<i class="ri-twitter-x-fill text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-primary/20 rounded-full transition-colors">
+<i class="ri-dribbble-line text-white"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="fade-in">
+<form class="bg-[#0a0f1a] rounded-lg p-8">
+<h3 class="text-2xl font-bold mb-6">Send Me a Message</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<label for="name" class="block text-sm font-medium text-gray-400 mb-2">Your Name</label>
+<input type="text" id="name" class="w-full px-4 py-3 rounded-lg border-none focus:ring-2 focus:ring-primary text-sm" placeholder="Your Name">
+</div>
+<div>
+<label for="email" class="block text-sm font-medium text-gray-400 mb-2">Your Email</label>
+<input type="email" id="email" class="w-full px-4 py-3 rounded-lg border-none focus:ring-2 focus:ring-primary text-sm" placeholder="abc@example.com">
+</div>
+</div>
+<div class="mb-6">
+<label for="subject" class="block text-sm font-medium text-gray-400 mb-2">Subject</label>
+<input type="text" id="subject" class="w-full px-4 py-3 rounded-lg border-none focus:ring-2 focus:ring-primary text-sm" placeholder="Project Inquiry">
+</div>
+<div class="mb-6">
+<label for="message" class="block text-sm font-medium text-gray-400 mb-2">Your Message</label>
+<textarea id="message" rows="5" class="w-full px-4 py-3 rounded-lg border-none focus:ring-2 focus:ring-primary text-sm resize-none" placeholder="Hello, I'd like to discuss a project..."></textarea>
+</div>
+<button type="submit" class="bg-primary hover:bg-primary/90 text-white px-8 py-3 !rounded-button font-medium transition-all whitespace-nowrap w-full">
+Send Message
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="py-12 bg-[#080c14] border-t border-white/10">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="mb-6 md:mb-0">
+<a href="#" class="text-2xl font-['Pacifico'] text-white">Amit</a>
+<p class="text-gray-400 mt-2">Creating digital experiences that inspire.</p>
+</div>
+<div class="flex flex-wrap gap-6">
+<a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a>
+<a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a>
+<a href="#skills" class="text-gray-400 hover:text-white transition-colors">Skills</a>
+<a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a>
+<a href="#experience" class="text-gray-400 hover:text-white transition-colors">Experience</a>
+<a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+</div>
+</div>
+<div class="border-t border-white/10 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm mb-4 md:mb-0">
+© 2025 Amit Prajapat. All rights reserved.
+</p>
+<div class="flex gap-4">
+<a href="https://github.com/prajapat04" class="text-gray-400 hover:text-white transition-colors">
+<i class="ri-github-fill"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors">
+<i class="ri-twitter-x-fill"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors">
+<i class="ri-dribbble-line"></i>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Back to Top Button -->
+<button id="back-to-top" class="fixed bottom-6 right-6 w-12 h-12 bg-primary/80 hover:bg-primary rounded-full flex items-center justify-center text-white shadow-lg transform transition-transform duration-300 scale-0">
+<i class="ri-arrow-up-line ri-lg"></i>
+</button>
+<script id="mobile-menu-script">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+if (mobileMenuButton.querySelector('i').classList.contains('ri-menu-line')) {
+mobileMenuButton.querySelector('i').classList.remove('ri-menu-line');
+mobileMenuButton.querySelector('i').classList.add('ri-close-line');
+} else {
+mobileMenuButton.querySelector('i').classList.remove('ri-close-line');
+mobileMenuButton.querySelector('i').classList.add('ri-menu-line');
+}
+});
+// Close mobile menu when clicking on a link
+const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+mobileMenuLinks.forEach(link => {
+link.addEventListener('click', function() {
+mobileMenu.classList.add('hidden');
+mobileMenuButton.querySelector('i').classList.remove('ri-close-line');
+mobileMenuButton.querySelector('i').classList.add('ri-menu-line');
+});
+});
+});
+</script>
+<script id="scroll-animation-script">
+document.addEventListener('DOMContentLoaded', function() {
+const fadeElements = document.querySelectorAll('.fade-in');
+const progressBars = document.querySelectorAll('.progress-fill');
+const backToTopButton = document.getElementById('back-to-top');
+// Function to check if an element is in viewport
+function isInViewport(element) {
+const rect = element.getBoundingClientRect();
+return (
+rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.85 &&
+rect.bottom >= 0
+);
+}
+// Function to handle scroll animations
+function handleScrollAnimations() {
+// Fade in elements when scrolled into view
+fadeElements.forEach(element => {
+if (isInViewport(element)) {
+element.classList.add('visible');
+}
+});
+// Animate progress bars when scrolled into view
+progressBars.forEach(bar => {
+if (isInViewport(bar)) {
+const width = bar.getAttribute('data-width');
+bar.style.width = width;
+}
+});
+// Show/hide back to top button
+if (window.scrollY > 500) {
+backToTopButton.classList.remove('scale-0');
+backToTopButton.classList.add('scale-100');
+} else {
+backToTopButton.classList.remove('scale-100');
+backToTopButton.classList.add('scale-0');
+}
+}
+// Initial check on page load
+handleScrollAnimations();
+// Check on scroll
+window.addEventListener('scroll', handleScrollAnimations);
+// Back to top button functionality
+backToTopButton.addEventListener('click', function() {
+window.scrollTo({
+top: 0,
+behavior: 'smooth'
+});
+});
+});
+</script>
+<script id="particles-script">
+document.addEventListener('DOMContentLoaded', function() {
+const heroParticles = document.querySelector('.hero-particles');
+// Create particles
+for (let i = 0; i < 50; i++) {
+const particle = document.createElement('div');
+particle.classList.add('particle');
+// Random size
+const size = Math.random() * 5 + 2;
+particle.style.width = `${size}px`;
+particle.style.height = `${size}px`;
+// Random position
+const posX = Math.random() * 100;
+const posY = Math.random() * 100;
+particle.style.left = `${posX}%`;
+particle.style.top = `${posY}%`;
+// Random opacity
+particle.style.opacity = Math.random() * 0.5;
+// Random animation delay
+particle.style.animationDelay = `${Math.random() * 15}s`;
+// Random animation duration
+particle.style.animationDuration = `${Math.random() * 10 + 10}s`;
+heroParticles.appendChild(particle);
+}
+});
+</script>
+<script>
+    function donwloadCV() {
+      const link = document.createElement('a');
+      link.href = 'cv.pdf';
+      link.download = 'Amit_Prajapat_CV.pdf'; // The name for downloaded file
+      link.click();
+    }
+  </script>
+<script id="custom-cursor-script">
+document.addEventListener('DOMContentLoaded', function() {
+const cursor = document.querySelector('.custom-cursor');
+const cursorFollower = document.querySelector('.custom-cursor-follower');
+document.addEventListener('mousemove', function(e) {
+cursor.style.left = e.clientX + 'px';
+cursor.style.top = e.clientY + 'px';
+// Follower with slight delay
+setTimeout(() => {
+cursorFollower.style.left = e.clientX + 'px';
+cursorFollower.style.top = e.clientY + 'px';
+}, 50);
+});
+// Change cursor on clickable elements
+const clickables = document.querySelectorAll('a, button, input, textarea, .card');
+clickables.forEach(element => {
+element.addEventListener('mouseenter', () => {
+cursor.style.width = '15px';
+cursor.style.height = '15px';
+cursor.style.background = 'rgba(14, 165, 233, 0.8)';
+cursorFollower.style.width = '50px';
+cursorFollower.style.height = '50px';
+cursorFollower.style.border = '1px solid rgba(14, 165, 233, 0.5)';
+});
+element.addEventListener('mouseleave', () => {
+cursor.style.width = '20px';
+cursor.style.height = '20px';
+cursor.style.background = 'rgba(14, 165, 233, 0.5)';
+cursorFollower.style.width = '40px';
+cursorFollower.style.height = '40px';
+cursorFollower.style.border = '1px solid rgba(14, 165, 233, 0.3)';
+});
+});
+});
+</script>
+</body>
+</html>
